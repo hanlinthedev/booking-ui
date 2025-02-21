@@ -28,7 +28,7 @@ export default function BookingConfirm({
 	pricePerNight: number;
 }) {
 	const [loading, setLoading] = useState(false);
-	const [bookingDetail, setBookingDetail] = useState<any>(null);
+	const [bookingDetail, setBookingDetail] = useState(null);
 	const [bookingDetailOpend, setBookingDetailOpend] = useState(true);
 	const totalPrice =
 		(pricePerNight * (date.to.getTime() - date.from.getTime())) /
