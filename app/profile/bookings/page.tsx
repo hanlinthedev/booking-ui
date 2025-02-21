@@ -8,6 +8,7 @@ async function getBookings() {
 	return res.json();
 }
 
+export const dynamic = 'force-dynamic'
 export default async function BookingsPage() {
 	const bookings = await getBookings();
 	console.log(bookings);

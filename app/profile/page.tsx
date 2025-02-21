@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { getCurrentUser, getLoyaltyInformation } from "@/lib/actions/user";
 import { Award, Mail, User } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default async function ProfilePage() {
 	const user = await getCurrentUser();
